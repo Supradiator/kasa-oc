@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
-import './css/App.css'
+import { Outlet } from 'react-router-dom'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
-
   return (
     <>
-      <p>
-        yo
-      </p>
+      <Header />
+      <Outlet />
+      <Footer />
     </>
   )
 }
