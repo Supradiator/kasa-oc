@@ -1,3 +1,6 @@
+import '../css/Footer.css'
+import '../css/Global.css'
+
 function Footer() {
     return(
         <div className="footer">
