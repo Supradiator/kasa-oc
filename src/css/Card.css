@@ -1,0 +1,29 @@
+
+.card img {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    text-decoration: none;
+    color: white;
+    width: 30%;
+    margin-bottom: 20px;
+    position: relative;
+}
