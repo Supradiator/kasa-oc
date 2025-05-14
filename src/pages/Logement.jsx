@@ -3,6 +3,7 @@ import data from '../logements.json'
 import Carousel from '../components/Carousel'
 import '../css/Logement.css'
 import TitleLogement from '../components/TitleLogement'
+import Tags from '../components/Tags'
 
 function Logement() {
   const { id } = useParams()
@@ -18,6 +19,7 @@ function Logement() {
         title={logement.title}
         location={logement.location}
       />
+      <Tags tags={logement.tags} />
     </div>
   )
 }
