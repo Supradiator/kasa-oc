@@ -1,0 +1,40 @@
+/* image  */
+
+.carousel img {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Chevron du carousel */
+
+.carousel-btn {
+    border: none;
+    font-size: 79px;
+    color: white;
+    background: none;
+    position: relative;
+}
+
+.left {
+    position: absolute;
+    left: 400px;
+    top: 300px;
+}
+
+.right {
+    position: absolute;
+    right: 400px;
+    top: 300px;
+}
+
+/* position */
+
+.carousel-counter {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+}

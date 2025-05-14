@@ -9,6 +9,7 @@ function Cards() {
       {cardData.map((item) => (
         <Card
           key={item.id}
+          id={item.id}
           title={item.title}
           cover={item.cover}
         />
