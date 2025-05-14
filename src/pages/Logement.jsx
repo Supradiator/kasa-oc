@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import data from '../logements.json'
 import Carousel from '../components/Carousel'
 import '../css/Logement.css'
+import TitleLogement from '../components/TitleLogement'
 
 function Logement() {
   const { id } = useParams()
@@ -12,14 +13,11 @@ function Logement() {
   return (
     <div className="logement-page container">
 
-      {/* Carrousel */}
       <Carousel pictures={logement.pictures} />
-
-      {/* Autres infos */}
-      <h1>{logement.title}</h1>
-      <p>{logement.description}</p>
-      <p><strong>Localisation :</strong> {logement.location}</p>
-      {/* etc. */}
+      <TitleLogement 
+        title={logement.title}
+        location={logement.location}
+      />
     </div>
   )
 }
