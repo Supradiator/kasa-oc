@@ -1,0 +1,46 @@
+.host-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.host-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.host-name {
+    font-size: 18px;
+    color: #FF6060;
+    font-weight: 500;
+    white-space: pre-line;
+    text-align: right;
+    align-content: center;
+    margin-right: 5px;
+}
+
+.host-picture {
+    border-radius: 50%;
+    height: 64px;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.star {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.star.empty {
+    color: #E3E3E3;
+}
+
+.star.full {
+    color: #FF6060;
+}

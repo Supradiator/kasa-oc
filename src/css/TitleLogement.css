@@ -1,0 +1,10 @@
+.TitleLogement h2 {
+    font-size: 36px;
+    color: #FF6060;
+    font-weight: 500;
+}
+
+.TitleLogement p {
+    font-size: 18px;
+    font-weight: 500;
+}

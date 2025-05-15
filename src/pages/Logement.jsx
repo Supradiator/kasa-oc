@@ -20,25 +20,30 @@ function Logement() {
 
       <Carousel pictures={logement.pictures} />
 
-      {/* Titre du logement + Sa location */}
+      <div className='desc'> {/*---> titre + location + tags + host info*/}
 
-      <TitleLogement 
-        title={logement.title}
-        location={logement.location}
-      />
+        <div> 
+          {/* Titre du logement + Sa location */}
+          <TitleLogement 
+            title={logement.title}
+            location={logement.location}
+          />
 
-      {/* Les tags */}
+          <div className='tags'>
+            {/* Les tags */}
+            <Tags tags={logement.tags} />
+          </div>
+        </div>
 
-      <Tags tags={logement.tags} />
+        {/* Nom + photo du hôte + avis */}
+        <HostRating host={logement.host} rating={parseInt(logement.rating)} />
 
-      {/* Nom + photo du hôte + avis */}
-
-      <HostRating host={logement.host} rating={parseInt(logement.rating)} />
-
-      {/* Les 2 dropdowns descriptions et equipements */}
-
-      <Dropdown title="Équipements" content={logement.equipments} />
-      <Dropdown title="Description" content={logement.description} />
+      </div>
+      <div className='drop'>
+        {/* Les 2 dropdowns descriptions et equipements */}
+        <Dropdown title="Équipements" content={logement.equipments} />
+        <Dropdown title="Description" content={logement.description} />
+      </div>
 
     </div>
   )

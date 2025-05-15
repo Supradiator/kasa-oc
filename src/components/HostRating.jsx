@@ -7,7 +7,9 @@ function HostRating({ host, rating }) {
   return (
     <div className="host-rating">
       <div className="host-info">
-        <p className="host-name">{host.name}</p>
+        <p className="host-name">
+        {host.name.replace(' ', '\n')}
+        </p>
         <img className="host-picture" src={host.picture} alt={`Portrait de ${host.name}`} />
       </div>
 
@@ -16,7 +18,7 @@ function HostRating({ host, rating }) {
             <FontAwesomeIcon
                 key={star}
                 icon={star <= rating ? ['fas', 'star'] : ['far', 'star']}
-                className="star"
+                className={`star ${star <= rating ? 'full' : 'empty'}`}
             />
         ))}
       </div>
