@@ -1,0 +1,11 @@
+.nfContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nfContent h1 {
+    font-size: 288;
+    font-weight: bold;
+    color: #FF6060;
+}
