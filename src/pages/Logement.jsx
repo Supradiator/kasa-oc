@@ -4,6 +4,7 @@ import Carousel from '../components/Carousel'
 import '../css/Logement.css'
 import TitleLogement from '../components/TitleLogement'
 import Tags from '../components/Tags'
+import HostRating from '../components/HostRating'
 
 function Logement() {
   const { id } = useParams()
@@ -20,6 +21,8 @@ function Logement() {
         location={logement.location}
       />
       <Tags tags={logement.tags} />
+      <HostRating host={logement.host} rating={parseInt(logement.rating)} />
+
     </div>
   )
 }
