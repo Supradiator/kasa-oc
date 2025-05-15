@@ -15,9 +15,11 @@ function Carousel({ pictures }) {
 
   return (
     <div className="carousel">
-      <button onClick={prevSlide} className="carousel-btn left" aria-label="Image précédente">
-        <FontAwesomeIcon icon="chevron-left" />
-      </button>
+      {pictures.length > 1 && (
+        <button onClick={prevSlide} className="carousel-btn left" aria-label="Image précédente">
+          <FontAwesomeIcon icon="chevron-left" />
+        </button>
+      )}
 
       <img
         src={pictures[currentIndex]}
@@ -25,9 +27,11 @@ function Carousel({ pictures }) {
         className="carousel-img"
       />
 
-      <button onClick={nextSlide} className="carousel-btn right" aria-label="Image suivante">
-        <FontAwesomeIcon icon="chevron-right" />
-      </button>
+      {pictures.length > 1 && (
+        <button onClick={nextSlide} className="carousel-btn right" aria-label="Image suivante">
+          <FontAwesomeIcon icon="chevron-right" />
+        </button>
+      )}
 
       {pictures.length > 1 && (
         <div className="carousel-counter">
