@@ -1,20 +1,17 @@
 .banner {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("/src/assets/banner-home.svg");
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    border-radius: 30px;
-    margin: 40px auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-radius: 30px;
+  margin: 40px auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .banner h1 {
-    padding-top: 40px;
-    padding-bottom: 90px;
-    font-size: 48px;
-    color: white;
-    -webkit-text-stroke: 1px black;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  padding-top: 40px;
+  padding-bottom: 90px;
+  font-size: 48px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
