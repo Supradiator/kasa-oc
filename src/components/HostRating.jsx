@@ -15,11 +15,11 @@ function HostRating({ host, rating }) {
 
       <div className="rating">
         {stars.map((star) => (
-            <FontAwesomeIcon
-                key={star}
-                icon={star <= rating ? ['fas', 'star'] : ['far', 'star']}
-                className={`star ${star <= rating ? 'full' : 'empty'}`}
-            />
+          <FontAwesomeIcon
+            key={star}
+            icon={['fas', 'star']} 
+            className={`star ${star <= rating ? 'full' : 'empty'}`}
+          />
         ))}
       </div>
     </div>
