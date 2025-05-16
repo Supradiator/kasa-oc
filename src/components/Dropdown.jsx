@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import '../css/Dropdown.css'
 
 function Dropdown({ title, content }) {
@@ -14,10 +14,14 @@ function Dropdown({ title, content }) {
     <div className="dropdown">
       <div className="dropdown-header" onClick={toggleDropdown}>
         <span>{title}</span>
-        <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
+        <FontAwesomeIcon
+          icon={faChevronDown}
+          className={`chevron-icon ${isOpen ? 'rotate' : ''}`}
+        />
       </div>
 
-      {isOpen && (
+      {/* 👇 ici on applique open/closed sur le WRAPPER */}
+      <div className={`dropdown-wrapper ${isOpen ? 'open' : 'closed'}`}>
         <div className="dropdown-content">
           {Array.isArray(content) ? (
             <ul>
@@ -29,7 +33,7 @@ function Dropdown({ title, content }) {
             <p>{content}</p>
           )}
         </div>
-      )}
+      </div>
     </div>
   )
 }
