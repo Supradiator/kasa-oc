@@ -41,8 +41,16 @@ function Logement() {
       </div>
       <div className='drop'>
         {/* Les 2 dropdowns descriptions et equipements */}
-        <Dropdown title="Équipements" content={logement.equipments} />
-        <Dropdown title="Description" content={logement.description} />
+        <Dropdown 
+          title="Équipements" 
+          content={logement.equipments} 
+          width='45%' 
+        />
+        <Dropdown 
+          title="Description" 
+          content={logement.description} 
+          width='45%'
+        />
       </div>
 
     </div>

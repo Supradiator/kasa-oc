@@ -1,0 +1,8 @@
+.listAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 0;
+    margin-bottom: 40px;
+}

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import '../css/Dropdown.css'
 
-function Dropdown({ title, content }) {
+function Dropdown({ title, content, width = '100%' }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleDropdown = () => {
@@ -11,7 +11,7 @@ function Dropdown({ title, content }) {
   }
 
   return (
-    <div className="dropdown">
+    <div className="dropdown" style={{ '--dropdown-width': width }}>
       <div className="dropdown-header" onClick={toggleDropdown}>
         <span>{title}</span>
         <FontAwesomeIcon
@@ -20,7 +20,7 @@ function Dropdown({ title, content }) {
         />
       </div>
 
-      <div className={`dropdown-wrapper ${isOpen ? 'open' : 'closed'}`}>
+      <div className={`dropdown-wrapper ${isOpen ? 'open' : ''}`}>
         <div className="dropdown-content">
           {Array.isArray(content) ? (
             <ul>

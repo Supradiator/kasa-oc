@@ -1,5 +1,6 @@
 .dropdown {
-  width: 45%;
+  width: var(--dropdown-width, 100%);
+  transition: width 0.3s ease;
 }
 
 .dropdown-header {
@@ -7,9 +8,8 @@
   font-size: 18px;
   font-weight: bold;
   color: white;
-  width: 100%;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,29 +29,27 @@
   transform: rotate(180deg);
 }
 
-/* gérer la hauteur (pour le fondu vertical) */
 .dropdown-wrapper {
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.2s ease;
 }
 
-/* ouvert = on autorise l'espace à s'agrandir */
+/* Active l’expansion */
 .dropdown-wrapper.open {
-  max-height: 500px;
+  max-height: 500px; /* ou auto si tu veux */
 }
 
-/* contenu animé (glissement + fondu) */
 .dropdown-content {
   margin-left: 20px;
   margin-top: 10px;
   font-size: 18px;
   opacity: 0;
   transform: translateY(-20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: opacity 0.2s ease, transform 0.4s ease;
 }
 
-/* dropdown ouvert = animation */
+/* Texte visible quand open */
 .dropdown-wrapper.open .dropdown-content {
   opacity: 1;
   transform: translateY(0);
