@@ -20,7 +20,6 @@ function Dropdown({ title, content }) {
         />
       </div>
 
-      {/* 👇 ici on applique open/closed sur le WRAPPER */}
       <div className={`dropdown-wrapper ${isOpen ? 'open' : 'closed'}`}>
         <div className="dropdown-content">
           {Array.isArray(content) ? (
