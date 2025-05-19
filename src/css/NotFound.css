@@ -22,3 +22,14 @@
     margin-bottom: 100px;
     color: black;
 }
+
+@media (max-width: 600px) {
+    .nfContent h1 {
+        font-size: 96px;
+    }
+
+    .nfContent p {
+        font-size: 18px;
+        text-align: center;
+    }
+}

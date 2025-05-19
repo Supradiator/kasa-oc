@@ -58,3 +58,21 @@
 .dropdown-content ul {
   list-style: none;
 }
+
+@media (max-width: 600px) {
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-header {
+    font-size: 13px;
+  }
+
+  .dropdown-header svg {
+    font-size: 16px;
+  }
+
+  .dropdown-content {
+    font-size: 12px;
+  }
+}

@@ -8,3 +8,18 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+@media (max-width: 600px) {
+    .TitleLogement {
+        margin-top: -20px;
+    }
+    
+    .TitleLogement h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }   
+
+    .TitleLogement p {
+        font-size: 14px;
+    }
+}

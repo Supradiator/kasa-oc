@@ -1,8 +1,9 @@
 
 .card img {
-    width: 340px;
-    height: 340px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
@@ -23,7 +24,12 @@
 .card {
     text-decoration: none;
     color: white;
-    width: 30%;
-    margin-bottom: 20px;
+    width: 100%;
     position: relative;
+}
+
+@media (max-width: 600px) {
+    .card img {
+        height: 255px;
+    }
 }

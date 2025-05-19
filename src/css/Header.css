@@ -12,4 +12,21 @@
 .nav a {
     text-decoration: none;
     color: black;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    
+    .header img {
+        height: 47px;
+    }
+
+    .nav {
+        gap: 20px;
+    }
+
+    .nav a {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
 }

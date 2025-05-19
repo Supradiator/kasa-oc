@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import data from '../logements.json'
 import Carousel from '../components/Carousel'
 import '../css/Logement.css'
@@ -11,7 +11,7 @@ function Logement() {
   const { id } = useParams()
   const logement = data.find(item => item.id === id)
 
-  if (!logement) return <h2>Logement introuvable</h2>
+  if (!logement) return <Navigate to="/NotFound" replace />
 
   return (
     <div className="logement-page container">

@@ -38,3 +38,28 @@
     top: 500px;
     left: 50%;
 }
+
+@media (max-width: 600px) {
+    .carousel img {
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .carousel-btn {
+        font-size: 20px;
+    }
+
+    .left {
+        left: 10%;
+        top: 28%;
+    }
+
+    .right {
+        right: 10%;
+        top: 28%;
+    }
+    
+    .carousel-counter {
+        display: none;
+    }
+}
