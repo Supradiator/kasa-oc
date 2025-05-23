@@ -1,3 +1,7 @@
+.carousel {
+    position: relative;
+}
+
 /* image  */
 
 .carousel img {
@@ -14,19 +18,18 @@
     font-size: 79px;
     color: white;
     background: none;
-    position: relative;
 }
 
 .left {
     position: absolute;
-    left: 400px;
-    top: 300px;
+    top: 40%;
+    left: 5%;
 }
 
 .right {
     position: absolute;
-    right: 400px;
-    top: 300px;
+    right: 5%;
+    top: 40%;
 }
 
 /* position */
@@ -35,7 +38,7 @@
     font-size: 18px;
     color: white;
     position: absolute;
-    top: 500px;
+    top: 90%;
     left: 50%;
 }
 
@@ -50,13 +53,11 @@
     }
 
     .left {
-        left: 10%;
-        top: 28%;
+        top: 45%;
     }
 
     .right {
-        right: 10%;
-        top: 28%;
+        top: 45%;
     }
     
     .carousel-counter {
